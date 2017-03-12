@@ -1,0 +1,35 @@
+@import '../variables/_variables';
+
+.images{
+    margin-top: 100px;
+    transition: all 0.5s;
+    perspective: 900px;
+    transition: 0.5s ease in out;
+    img{
+        height: 115px;
+        width: 115px;
+        padding-right: 10px;
+        transition: 0.5s ease in out;
+    }
+}
+
+.images__container{
+    background-color: $defaultbg;
+    display: inline-block;
+    height: 115px;
+    width: 104px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 2px black;
+    transition: 0.5s ease in out;
+    img{
+        visibility: hidden;
+        transition: 0.5s ease in out;
+    }
+    transition : 0.5s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        transition : 0.5s ease-in-out;
+        background-color: lighten(#191919, 15%);
+    }
+}
+
